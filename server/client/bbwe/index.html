@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="application/javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/" />
+    <title>BBWE</title>
+    <!-- <link rel="stylesheet" href="/server/client/bbwe/style.css"> -->
+    <style>
+#successMessage {
+    text-align: center;
+    font-size: 100%;
+}
+body {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #DD2679, #6AA6B1);
+}
+/* .bbwe {
+    /* width: 50%;
+    height: 50%;
+
+
+} */
+img {
+    width: 37.6px;
+    height: auto;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    max-width: 100%;
+    margin: 10px;
+    margin-left: 40px;
+    margin-right: 0px;
+    cursor: pointer;
+    margin-bottom: 0px;
+
+}
+#img2 {
+    width: 10%;
+    height: 6%;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin-left: 10px;
+    margin-right: 0px;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+/* h5 {
+    width: 55px;
+    height: 27px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    /* display: flex; */
+    /* align-items: center;
+    text-align: center; */
+    /* color: #FFFFFF;
+    float: top right;
+    margin-left: 183%;
+    margin-top: 0%; */
+    
+/* } */
+#img3 {
+    /* /* display: flex; */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 4%;
+    height: 4%;
+    float: right;
+    margin-left: 0px;
+    cursor: pointer;
+    margin-right: 50px;
+    /* flex: none;
+    order: 0;
+    flex-grow: 0; */
+}
+#img4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    /* gap: 39.11px; */
+    /* position: auto; */
+    margin-top: 3%;
+    margin-right: 0px;
+    margin-left: 15%;
+    float: left;
+    width: 35%;
+    height: 11rem;
+    /* left: 368px;
+    top: 183.26px; */
+}
+#img5 {
+    width: 15%;
+    height: 100%;
+    /* position: absolute; */
+    left: 21.31%;
+    right: 44.51%;
+    top: 15.66%;
+    bottom: 24.78%;
+    float: left;
+    margin-left: 0px;
+    margin-top: 50px; 
+    margin-right: 0px;
+    /* background: rgba(255, 255, 255, 0.17); */
+    /* border-radius: 77.6053px;
+    transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+#img6 {
+    width: 16.5%;
+    height: 100%;
+    float: right;
+    left: 76.69%;
+    right: -10.88%;
+    top: 15.66%;
+    bottom: 24.78%;
+    margin-top: 50px;
+    /* background: rgba(255, 255, 255, 0.17);
+    border-radius: 77.6053px; */
+    margin-left: 0px;
+}
+form {
+    text-align: center;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 20%;
+}
+#emailInput {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    border-radius: 20px;
+    width: 26%;
+    height: 2rem;
+    background-color: transparent;
+    text-indent: 30px;
+}
+#myButton {
+    border-radius: 20px;
+    height: 2.25rem;
+    width: 8%;
+    border: none;
+    cursor: arrow;
+    color: #DD2679;
+}
+.hidden {
+    display: none;
+}
+#emailInput::placeholder {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 0.01rem;
+}
+#img7 {
+    /* position: absolute; */
+    width: 26.5%;
+    height: 47%;
+    position: absolute;
+    /* float: left;
+    margin-left: 9rem;
+    margin-top: 0px;
+    margin-bottom: 60rem; */
+    top: 0;
+    right: 0;
+    margin-right: 50.6rem;
+    margin-top: 21.8rem;
+}
+.footer {
+    width: 100%;
+    height: 6rem;
+    background-color: #FFFFFF;
+    /* position: relative; */
+    margin-top: 13.5rem;
+    /* margin-right: 50px; */
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+}
+#img8 {
+    width: 27%;
+    height: 13%;
+    margin-top: 1.7rem;
+    margin-left: 0rem;
+}
+#icon1,#icon2,#icon3,#icon4 {
+    width: 1.2%;
+    margin-left: 1rem;
+}
+#icon1 {
+    margin-left: 9.2%;
+}
+
+
+
+/* Media query for tablets */
+@media screen and (min-width: 768px) {
+    body {
+        width: 100%;
+        height: 90%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(to right, #DD2679, #6AA6B1);
+    }
+    #successMessage {
+    text-align: center;
+    font-size: 100%;
+    }
+    /* .bbwe {
+        /* width: 50%;
+        height: 50%;
+    
+    
+    } */
+    img {
+        width: 37.6px;
+        height: auto;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        max-width: 100%;
+        margin: 10px;
+        margin-left: 40px;
+        margin-right: 0px;
+        cursor: pointer;
+        margin-bottom: 0px;
+        margin-top: 1rem;
+    
+    }
+    #img2 {
+        width: 20%;
+        height: 10%;
+        color: #FFFFFF;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin-left: 10px;
+        margin-right: 0px;
+        cursor: pointer;
+        margin-bottom: 0px;
+    }
+    /* h5 {
+        width: 55px;
+        height: 27px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 27px;
+        /* identical to box height */
+        /* display: flex; */
+        /* align-items: center;
+        text-align: center; */
+        /* color: #FFFFFF;
+        float: top right;
+        margin-left: 183%;
+        margin-top: 0%; */
+        
+    /* } */
+    #img3 {
+        /* /* display: flex; */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+        width: 6%;
+        height: 4%;
+        float: right;
+        margin-left: 0px;
+        cursor: pointer;
+        margin-right: 50px;
+        /* flex: none;
+        order: 0;
+        flex-grow: 0; */
+    }
+    #img4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        /* gap: 39.11px; */
+        /* position: auto; */
+        margin-top: 3%;
+        margin-right: 0px;
+        margin-left: 15%;
+        float: left;
+        width: 35%;
+        height: 11rem;
+        /* left: 368px;
+        top: 183.26px; */
+    }
+    #img5 {
+        width: 15%;
+        height: 100%;
+        /* position: absolute; */
+        left: 21.31%;
+        right: 44.51%;
+        top: 15.66%;
+        bottom: 24.78%;
+        float: left;
+        margin-left: 0px;
+        margin-top: 50px; 
+        margin-right: 0px;
+        /* background: rgba(255, 255, 255, 0.17); */
+        /* border-radius: 77.6053px;
+        transform: matrix(-1, 0, 0, 1, 0, 0); */
+    }
+    #img6 {
+        width: 16.5%;
+        height: 100%;
+        float: right;
+        left: 76.69%;
+        right: -10.88%;
+        top: 15.66%;
+        bottom: 24.78%;
+        margin-top: 50px;
+        /* background: rgba(255, 255, 255, 0.17);
+        border-radius: 77.6053px; */
+        margin-left: 0px;
+    }
+    form {
+        text-align: center;
+        margin-left: 0px;
+        padding-left: 0px;
+        margin-right: 20%;
+    }
+    #emailInput {
+        color: #FFFFFF;
+        border-color: #FFFFFF;
+        border-radius: 20px;
+        width: 26%;
+        height: 2rem;
+        background-color: transparent;
+        text-indent: 30px;
+    }
+    #myButton {
+        border-radius: 20px;
+        height: 2.25rem;
+        width: 10%;
+        border: none;
+        cursor: arrow;
+        color: #DD2679;
+    }
+    .hidden {
+        display: none;
+    }
+    #emailInput::placeholder {
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 0.01rem;
+    }
+    #img7 {
+        /* position: absolute; */
+        width: 26.5%;
+        height: 47%;
+        position: absolute;
+        /* float: left;
+        margin-left: 9rem;
+        margin-top: 0px;
+        margin-bottom: 60rem; */
+        top: 0;
+        right: 0;
+        margin-right: 50.6rem;
+        margin-top: 21.8rem;
+    }
+    .footer {
+        width: 100%;
+        height: 6rem;
+        background-color: #FFFFFF;
+        /* position: relative; */
+        margin-top: 13.5rem;
+        /* margin-right: 50px; */
+        /* position: fixed; */
+        bottom: 0;
+        left: 0;
+    }
+    #img8 {
+        width: 20%;
+        height: 13%;
+        margin-top: 1.7rem;
+        margin-left: 4rem;
+    }
+    #icon1,#icon2,#icon3,#icon4 {
+        width: 1.2%;
+        margin-left: 1rem;
+    }
+    #icon1 {
+        margin-left: 9.2%;
+    }
+    
+    
+    
+    form {
+        text-align: center;
+        margin-left: 0px;
+        padding-left: 0px;
+        margin-right: 20%;
+        margin-top: 0rem;
+    }
+    /* #emailInput {
+        color: #FFFFFF;
+        border-color: #FFFFFF;
+        border-radius: 20px;
+        width: 26%;
+        height: 1.5rem;
+        background-color: transparent;
+        text-indent: 30px;
+    } */
+    /* #myButton {
+        border-radius: 32%;
+        height: 1.8rem;
+        width: 10%;
+        border: none;
+        cursor: arrow;
+        color: #DD2679;
+    } */
+    #img2 {
+        width: 14%;
+        height: -5%;
+        color: #FFFFFF;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin-left: 10px;
+        margin-right: 0px;
+        cursor: pointer;
+        margin-bottom: 0px;
+        margin-top: 0rem;
+    }
+    #img7 {
+        /* position: absolute; */
+        width: 28.5%;
+        height: 47%;
+        position: absolute;
+        /* float: left;
+        margin-left: 9rem;
+        margin-top: 0px;
+        margin-bottom: 60rem; */
+        top: 0;
+        right: 0;
+        margin-right: 18.2rem;
+        margin-top: 21.8rem;
+    }
+  }
+  
+  /* Media query for desktops */
+  @media screen and (min-width: 1024px) {
+    #successMessage {
+    text-align: center;
+    font-size: 100%;
+    }
+    #img7 {
+        /* position: absolute; */
+        width: 26.5%;
+        height: 47%;
+        position: absolute;
+        /* float: left;
+        margin-left: 9rem;
+        margin-top: 0px;
+        margin-bottom: 60rem; */
+        top: 0;
+        right: 0;
+        margin-right: 24.7rem;
+        margin-top: 21.8rem;
+    }
+    .footer {
+        width: 100%;
+        height: 10rem;
+        background-color: #FFFFFF;
+        /* position: relative; */
+        margin-top: 12.5rem;
+        /* margin-right: 50px; */
+        /* position: fixed; */
+        bottom: 0;
+        left: 0;
+    }
+    #img8 {
+        width: 19%;
+        height: 13%;
+        margin-top: 1.05rem;
+        margin-left: 5rem;
+        margin-bottom: 0rem;
+    }
+    #icon1 {
+        margin-left: 8.3%;
+        margin-top: 0em;
+    }
+    #img2 {
+        width: 12%;
+        height: 1%;
+        color: #FFFFFF;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin-left: 10px;
+        margin-right: 0px;
+        cursor: pointer;
+        margin-bottom: 0px;
+        margin-top: 0rem;
+    }
+  }
+
+/* Media query for tablets */
+@media screen and (min-width: 1349px) {
+    body {
+        width: 100%;
+        height: 90%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(to right, #DD2679, #6AA6B1);
+    }
+    #successMessage {
+    text-align: center;
+    font-size: 100%;
+    }
+    /* .bbwe {
+        /* width: 50%;
+        height: 50%;
+    
+    
+    } */
+    img {
+        width: 37.6px;
+        height: auto;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        max-width: 100%;
+        margin: 10px;
+        margin-left: 40px;
+        margin-right: 0px;
+        cursor: pointer;
+        margin-bottom: 0px;
+    
+    }
+    #img2 {
+        width: 10%;
+        height: 6%;
+        color: #FFFFFF;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin-left: 10px;
+        margin-right: 0px;
+        cursor: pointer;
+        margin-bottom: 0px;
+    }
+    /* h5 {
+        width: 55px;
+        height: 27px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 27px;
+        /* identical to box height */
+        /* display: flex; */
+        /* align-items: center;
+        text-align: center; */
+        /* color: #FFFFFF;
+        float: top right;
+        margin-left: 183%;
+        margin-top: 0%; */
+        
+    /* } */
+    #img3 {
+        /* /* display: flex; */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+        width: 4%;
+        height: 4%;
+        float: right;
+        margin-left: 0px;
+        cursor: pointer;
+        margin-right: 50px;
+        /* flex: none;
+        order: 0;
+        flex-grow: 0; */
+    }
+    #img4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        /* gap: 39.11px; */
+        /* position: auto; */
+        margin-top: 3%;
+        margin-right: 0px;
+        margin-left: 15%;
+        float: left;
+        width: 35%;
+        height: 11rem;
+        /* left: 368px;
+        top: 183.26px; */
+    }
+    #img5 {
+        width: 15%;
+        height: 100%;
+        /* position: absolute; */
+        left: 21.31%;
+        right: 44.51%;
+        top: 15.66%;
+        bottom: 24.78%;
+        float: left;
+        margin-left: 0px;
+        margin-top: 50px; 
+        margin-right: 0px;
+        /* background: rgba(255, 255, 255, 0.17); */
+        /* border-radius: 77.6053px;
+        transform: matrix(-1, 0, 0, 1, 0, 0); */
+    }
+    #img6 {
+        width: 16.5%;
+        height: 100%;
+        float: right;
+        left: 76.69%;
+        right: -10.88%;
+        top: 15.66%;
+        bottom: 24.78%;
+        margin-top: 50px;
+        /* background: rgba(255, 255, 255, 0.17);
+        border-radius: 77.6053px; */
+        margin-left: 0px;
+    }
+    form {
+        text-align: center;
+        margin-left: 0px;
+        padding-left: 0px;
+        margin-right: 20%;
+    }
+    #emailInput {
+        color: #FFFFFF;
+        border-color: #FFFFFF;
+        border-radius: 20px;
+        width: 26%;
+        height: 2rem;
+        background-color: transparent;
+        text-indent: 30px;
+    }
+    #myButton {
+        border-radius: 20px;
+        height: 2.25rem;
+        width: 8%;
+        border: none;
+        cursor: arrow;
+        color: #DD2679;
+    }
+    .hidden {
+        display: none;
+    }
+    #emailInput::placeholder {
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 0.01rem;
+    }
+    #img7 {
+        /* position: absolute; */
+        width: 26.5%;
+        height: 47%;
+        position: absolute;
+        /* float: left;
+        margin-left: 9rem;
+        margin-top: 0px;
+        margin-bottom: 60rem; */
+        top: 0;
+        right: 0;
+        margin-right: 33rem;
+        margin-top: 21.8rem;
+    }
+    .footer {
+        width: 100%;
+        height: 6rem;
+        background-color: #FFFFFF;
+        /* position: relative; */
+        margin-top: 13.5rem;
+        /* margin-right: 50px; */
+        /* position: fixed; */
+        bottom: 0;
+        left: 0;
+    }
+    #img8 {
+        width: 27%;
+        height: 13%;
+        margin-top: 1.7rem;
+        margin-left: 2.5rem;
+    }
+    #icon1,#icon2,#icon3,#icon4 {
+        width: 1.2%;
+        margin-left: 1rem;
+    }
+    #icon1 {
+        margin-left: 9.2%;
+    }
+  }
+
+/* Media query for Android devices */
+@media screen and (min-width: 387px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        width: 100%;
+        height: 90%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(to right, #DD2679, #6AA6B1);
+    }
+    #successMessage {
+    text-align: center;
+    font-size: 60%;
+    }
+    /* .bbwe {
+        /* width: 50%;
+        height: 50%;
+    
+    
+    } */
+    img {
+        width: 6%;
+        height: auto;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        max-width: 100%;
+        margin: 10px;
+        margin-left: 40px;
+        margin-right: 0px;
+        cursor: pointer;
+        margin-bottom: 0px;
+    
+    }
+    #img2 {
+        width: 17%;
+        height: 6%;
+        color: #FFFFFF;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin-left: 10px;
+        margin-right: 0px;
+        cursor: pointer;
+        margin-bottom: 0px;
+    }
+    /* h5 {
+        width: 55px;
+        height: 27px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 27px;
+        /* identical to box height */
+        /* display: flex; */
+        /* align-items: center;
+        text-align: center; */
+        /* color: #FFFFFF;
+        float: top right;
+        margin-left: 183%;
+        margin-top: 0%; */
+        
+    /* } */
+    #img3 {
+        /* /* display: flex; */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+        width: 8%;
+        height: 4%;
+        float: right;
+        margin-left: 0px;
+        cursor: pointer;
+        margin-right: 50px;
+        /* flex: none;
+        order: 0;
+        flex-grow: 0; */
+    }
+    #img4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        /* gap: 39.11px; */
+        /* position: auto; */
+        margin-top: 3%;
+        margin-right: 0px;
+        margin-left: 10%;
+        float: left;
+        width: 50%;
+        height: 11rem;
+        margin-bottom: 0%;
+        /* left: 368px;
+        top: 183.26px; */
+    }
+    #img5 {
+        width: 15%;
+        height: 100%;
+        /* position: absolute; */
+        left: 21.31%;
+        right: 44.51%;
+        top: 15.66%;
+        bottom: 24.78%;
+        float: left;
+        margin-left: 0px;
+        margin-top: 50px; 
+        margin-right: 0px;
+        /* background: rgba(255, 255, 255, 0.17); */
+        /* border-radius: 77.6053px;
+        transform: matrix(-1, 0, 0, 1, 0, 0); */
+    }
+    #img6 {
+        width: 16.5%;
+        height: 100%;
+        float: right;
+        left: 76.69%;
+        right: -10.88%;
+        top: 15.66%;
+        bottom: 24.78%;
+        margin-top: 50px;
+        /* background: rgba(255, 255, 255, 0.17);
+        border-radius: 77.6053px; */
+        margin-left: 0px;
+    }
+    form {
+        text-align: center;
+        margin-left: 0px;
+        padding-left: 15%;
+        margin-right: 15%;
+        margin-top: 0%;
+    }
+    #emailInput {
+        color: #FFFFFF;
+        border-color: #FFFFFF;
+        border-radius: 20px;
+        width: 40%;
+        height: 0.9rem;
+        background-color: transparent;
+        text-indent: 10px;
+        font-size: 55%;
+    }
+    #myButton {
+        border-radius: 20px;
+        height: 1.2rem;
+        width: 15%;
+        border: none;
+        cursor: arrow;
+        color: #DD2679;
+        font-size: 55%;
+    }
+    .hidden {
+        display: none;
+    }
+    #emailInput::placeholder {
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 0.01rem;
+    }
+    #img7 {
+        /* position: absolute; */
+        width: 26.5%;
+        height: 47%;
+        position: absolute;
+        /* float: left;
+        margin-left: 9rem;
+        margin-top: 0px;
+        margin-bottom: 60rem; */
+        top: 0;
+        right: 0;
+        margin-right: 5.6rem;
+        margin-top: 21.8rem;
+    }
+    .footer {
+        width: 100%;
+        height: 6rem;
+        background-color: #FFFFFF;
+        /* position: relative; */
+        margin-top: 6.5rem;
+        /* margin-right: 50px; */
+        /* position: fixed; */
+        bottom: 0;
+        left: 0;
+    }
+    #img8 {
+        width: 27%;
+        height: 13%;
+        margin-top: 1.7rem;
+        margin-left: 0rem;
+    }
+    #icon1,#icon2,#icon3,#icon4 {
+        width: 1.2%;
+        margin-left: 1rem;
+    }
+    #icon1 {
+        margin-left: 9.2%;
+    }
+  }
+  
+  /* Media query for iPhone devices */
+  @media screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    body {
+        width: 100%;
+        height: 90%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(to right, #DD2679, #6AA6B1);
+    }
+    #successMessage {
+    text-align: center;
+    font-size: 60%;
+    }
+    /* .bbwe {
+        /* width: 50%;
+        height: 50%;
+    
+    
+    } */
+    img {
+        width: 6%;
+        height: auto;
+        color: #FFFFFF;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        max-width: 100%;
+        margin: 10px;
+        margin-left: 40px;
+        margin-right: 0px;
+        cursor: pointer;
+        margin-bottom: 0px;
+    
+    }
+    #img2 {
+        width: 17%;
+        height: 6%;
+        color: #FFFFFF;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin-left: 10px;
+        margin-right: 0px;
+        cursor: pointer;
+        margin-bottom: 0px;
+    }
+    /* h5 {
+        width: 55px;
+        height: 27px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 27px;
+        /* identical to box height */
+        /* display: flex; */
+        /* align-items: center;
+        text-align: center; */
+        /* color: #FFFFFF;
+        float: top right;
+        margin-left: 183%;
+        margin-top: 0%; */
+        
+    /* } */
+    #img3 {
+        /* /* display: flex; */
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+        width: 8%;
+        height: 4%;
+        float: right;
+        margin-left: 0px;
+        cursor: pointer;
+        margin-right: 50px;
+        /* flex: none;
+        order: 0;
+        flex-grow: 0; */
+    }
+    #img4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        /* gap: 39.11px; */
+        /* position: auto; */
+        margin-top: 3%;
+        margin-right: 0px;
+        margin-left: 10%;
+        float: left;
+        width: 50%;
+        height: 11rem;
+        margin-bottom: 0%;
+        /* left: 368px;
+        top: 183.26px; */
+    }
+    #img5 {
+        width: 15%;
+        height: 100%;
+        /* position: absolute; */
+        left: 21.31%;
+        right: 44.51%;
+        top: 15.66%;
+        bottom: 24.78%;
+        float: left;
+        margin-left: 0px;
+        margin-top: 50px; 
+        margin-right: 0px;
+        /* background: rgba(255, 255, 255, 0.17); */
+        /* border-radius: 77.6053px;
+        transform: matrix(-1, 0, 0, 1, 0, 0); */
+    }
+    #img6 {
+        width: 16.5%;
+        height: 100%;
+        float: right;
+        left: 76.69%;
+        right: -10.88%;
+        top: 15.66%;
+        bottom: 24.78%;
+        margin-top: 50px;
+        /* background: rgba(255, 255, 255, 0.17);
+        border-radius: 77.6053px; */
+        margin-left: 0px;
+    }
+    form {
+        text-align: center;
+        margin-left: 0px;
+        padding-left: 15%;
+        margin-right: 15%;
+        margin-top: 0%;
+    }
+    #emailInput {
+        color: #FFFFFF;
+        border-color: #FFFFFF;
+        border-radius: 20px;
+        width: 40%;
+        height: 0.9rem;
+        background-color: transparent;
+        text-indent: 8px;
+        font-size: 50%;
+    }
+    #myButton {
+        border-radius: 20px;
+        height: 1.2rem;
+        width: 20%;
+        border: none;
+        cursor: arrow;
+        color: #DD2679;
+        font-size: 50%;
+    }
+    .hidden {
+        display: none;
+    }
+    #emailInput::placeholder {
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-left: 0.01rem;
+    }
+    #img7 {
+        /* position: absolute; */
+        width: 29.5%;
+        height: 20%;
+        position: absolute;
+        /* float: left;
+        margin-left: 9rem;
+        margin-top: 0px;
+        margin-bottom: 60rem; */
+        top: 0;
+        right: 0;
+        margin-right: 3.6rem;
+        margin-top: 19.8rem;
+    }
+    .footer {
+        width: 100%;
+        height: 20rem;
+        background-color: #FFFFFF;
+        /* position: relative; */
+        margin-top: 5.5rem;
+        /* margin-right: 50px; */
+        /* position: fixed; */
+        bottom: 0;
+        left: 0;
+    }
+    #img8 {
+        width: 27%;
+        height: 13%;
+        margin-top: 0rem;
+        margin-left: 1.5rem;
+        margin-bottom: 0rem;
+    }
+    #icon1,#icon2,#icon3,#icon4 {
+        width: 2%;
+        margin-left: 0.4rem;
+        margin-top: 0rem;
+    }
+    #icon1 {
+        margin-left: 9.2%;
+    }
+  }
+  
+  /* Media query for iPhone devices in landscape mode */
+  @media screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    /* Styles for iPhone devices in landscape mode */
+    /* Add your iPhone landscape styles here */
+  }
+  
+
+    </style>
+</head>
+<body>
+    <div class="bbwe">
+        <p><img src="/server/client/bbwe/Screenshot 2022-12-25 11.39 1 (Traced).png" alt="" cache-control="max-age=3600"> <img src="/server/client/bbwe/bbwlogo.svg" id="img2" cache-control="max-age=3600"> <img src="/server/client/bbwe/home.svg" id="img3" cache-control="max-age=3600">
+            <p></p>
+        <img src="/server/client/bbwe/picwomen.svg" id="img5" cache-control="max-age=3600">
+        <div>
+            <img src="/server/client/bbwe/come.svg" id="img4" cache-control="max-age=3600">
+            <img src="/server/client/bbwe/picwomenn.svg" id="img6" cache-control="max-age=3600">
+
+            <form id="subscribeForm" action="/api/subscribe" method="post">
+                <input type="email" name="email" id="emailInput" placeholder="Email Address">
+                <button type="submit" id="myButton">Submit</button>
+            </form>
+
+            <p id="successMessage" class="hidden">Thank you for subscribing!</p>
+        </div>
+
+        <div class="footer">
+            <img src="/server/client/bbwe/social.svg" id="img8">
+            <img src="/server/client/bbwe/phone1.png" id="img7">
+            <div class="icons">
+                <img src="/server/client/bbwe/twitter.png" id="icon1">
+                <img src="/server/client/bbwe/instagram.png" id="icon2">
+                <img src="/server/client/bbwe/facebook.png" id="icon3">
+                <img src="/server/client/bbwe/linkedin.png" id="icon4">
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="application/javascript">
+  <title>Coming Soon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Our Website is Coming Soon!</h1>
+    <p>Subscribe to be the first to know when we launch.</p>
+    <form id="subscribeForm" action="/api/subscribe" method="post">
+      <!-- your form fields here -->
+      <input type="email" name="email" id="emailInput" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    
+    <p id="successMessage" class="hidden">Thank you for subscribing!</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
